@@ -1,6 +1,4 @@
 # Clustering Project
-Repo with the instructions for the Clustering project (Mini Project III).
-
 
 ### Topics
 This mini project is dedicated to following topics:
@@ -26,7 +24,7 @@ We will be using old data about different financial transactions. You can downlo
 
 ### Output
 
-In this miniproject, we will:
+In this project, we will:
 
 1.  create two separate customer segmentations (using clustering) to split them into 3-5 clusters: 
     - based on demographics (only on the information from twm_customer)
@@ -36,5 +34,3 @@ In this miniproject, we will:
         - are they making lot of small transactions or few huge ones?
 2. visualize the created clusters using [radar charts](https://plotly.com/python/radar-chart/) and compare them agains each other
 3. visualize segmentations using scatter plot. We will have to use PCA to be able to plot our observations in 2D.
-4. (stretch) visualize in 2D how our clusters are evolving in each iteration of KMeans (for at least 20 iterations).
-    - we will need to create own implementation of kmeans so we can see what is happening with the clusters during the iterations.
