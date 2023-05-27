@@ -1,14 +1,16 @@
 # Clustering Project
 
-### Topics
-This mini project is dedicated to following topics:
+## Project/Goals 🎯
+Following topics:
 - Data Wrangling
 - Data Visualization
 - Data Preparation and Feature Engineering
 - Dimensionality Reduction
 - Unsupervised Learning
 
-### Data
+In this project, two customer segmentations are created using clustering techniques. The first segmentation is based on demographics, utilizing information from the "twm_customer" dataset. The second segmentation focuses on banking behavior, considering factors such as savings account usage, amount saved, credit account usage, debt levels, and transaction patterns. Radar charts are used to visualize and compare the clusters, providing a comprehensive view of each segment's characteristics. Additionally, scatter plots are employed, employing Principal Component Analysis (PCA) to plot observations in a 2D space, offering a visual representation of the segmentations
+
+## Data 📂
 We will be using old data about different financial transactions. You can download the data from [here](https://drive.google.com/file/d/1zAjnf936aHkwVCq_BmA47p4lpRjyRzMf/view?usp=sharing). The data contains following tables:
 
 - twm_customer - information about customers
@@ -21,16 +23,21 @@ We will be using old data about different financial transactions. You can downlo
 - twm_checking_tran - information about savings transactions (subset of twm_transactions)
 - twm_credit_tran - information about credit checking (subset of twm_transactions)
 
+## Process ⚙️
 
-### Output
+1. Exploratory data analysis where we cleaned and wrangled the data 
+2. We then did feature engineering and selected our main data features
+3. Created radar and PCA charts
+4. Found trends  
 
-In this project, we will:
+## Results 📊
 
-1.  create two separate customer segmentations (using clustering) to split them into 3-5 clusters: 
-    - based on demographics (only on the information from twm_customer)
-    - based on their banking behavior. We can take following things into consideration as banking behavior:
-        - do they have savings account? How much do they save?
-        - do they have credit account? How much do they live in debt?
-        - are they making lot of small transactions or few huge ones?
-2. visualize the created clusters using [radar charts](https://plotly.com/python/radar-chart/) and compare them agains each other
-3. visualize segmentations using scatter plot. We will have to use PCA to be able to plot our observations in 2D.
+![clusters](./images/clusters.png)
+
+We can see that the optimal number of clusters from the above chart is 3
+
+![radar_chart](./images/radar_chart.png)
+
+Above is the radar chart which shows the similarieis between the 3 clusters within age, years with bank, income, # of children and gender
+
+
